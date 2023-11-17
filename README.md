@@ -1,8 +1,17 @@
-# React + Vite
+# Video Analysis Application for Car Accident Timestamps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live
 
-Currently, two official plugins are available:
+Visit sight application here and start using to save your video analysis time
+[live](https://sightanalyzer.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
+
+This project is a video analysis application designed to leverage OpenCV and machine learning to provide timestamps for car accidents in recorded video footage. The application aims to enhance the process of analyzing traffic incidents by automatically detecting and timestamping car accidents.
+
+## Features
+
+- **OpenCV Integration:** Utilizes OpenCV for video processing and analysis.
+- **Machine Learning:** Implements machine learning algorithms for car accident detection.
+- **Timestamp Generation:** Automatically generates timestamps for identified car accidents.
+- **User-Friendly Interface:** Provides an intuitive interface for users to interact with the application./vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
