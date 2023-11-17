@@ -1,0 +1,314 @@
+.analysis-container {
+    padding: 0 70px;
+    margin-bottom: 80px;
+
+    .search-bar {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        form {
+            width: 100%;
+
+            input {
+                width: 90%;
+                height: 100%;
+                padding: 9px 12px;
+                font-size: 15px;
+                line-height: 20px;
+                color: var(--grey);
+                background-color: var(--card-color);
+                border: 1px solid var(--border-color);
+                border-radius: 6px;
+            }
+        }
+    }
+
+    .upload-container {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .left {
+            width: 45%;
+
+            form {
+                background: var(--bg-color);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 30px;
+                border-radius: 6px;
+
+                label {
+                    margin-bottom: 20px;
+
+                    input {
+                        margin: 8px 0;
+                        background-color: var(--card-color);
+                        border: 1px solid var(--border-color);
+                        width: 100%;
+                        padding: 5px 12px;
+                        border-radius: 6px;
+                    }
+                }
+
+                input {
+                    margin: 8px 0;
+                    background-color: var(--card-color);
+                    border: 1px solid var(--border-color);
+                    width: 100%;
+                    padding: 5px;
+                    border-radius: 6px;
+                }
+
+                .start-analysis-button {
+                    margin-top: 10px;
+                    background-color: var(--green);
+                    color: var(--white);
+                    border: none;
+                    border-radius: 6px;
+                    padding: 8px 16px;
+                    cursor: pointer;
+                    width: 48%;
+                    margin-top: 30px;
+                    align-self: center;
+                }
+            }
+        }
+
+
+        .right {
+            background: var(--bg-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+            padding: 30px;
+            border-radius: 6px;
+        }
+
+    }
+
+    .analysis-repo-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .analysis-repo {
+        width: calc(25% - 20px);
+        /* 25% width for each card with some margin */
+        margin: 10px;
+        padding: 15px;
+        background-color: var(--card-color);
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-name {
+        // font-weight: bold;
+        color: var(--blue);
+        font-size: 18px;
+    }
+
+    .video-description {
+        margin-top: 10px;
+        color: var(--grey);
+    }
+
+    .uploaded-on {
+        margin-top: 10px;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .view-analysis-button {
+            margin-top: 10px;
+            background-color: var(--blue);
+            color: var(--white);
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            cursor: pointer;
+            width: 48%;
+        }
+
+        .view-analysis-button:hover {
+            background-color: var(--hover-color);
+        }
+
+        .delete-analysis-button {
+            margin-top: 10px;
+            background-color: var(--red);
+            color: var(--white);
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            cursor: pointer;
+            width: 48%;
+        }
+
+        .delete-analysis-button:hover {
+            background-color: #ff3326;
+        }
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e3e3e33e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 40%;
+    height: 85%;
+    background-color: var(--card-color);
+    color: #ffffff;
+    padding: 30px;
+    padding-top: 50px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.8);
+    overflow-y: scroll;
+}
+
+.close-modal-button {
+    background: var(--red);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+@media (max-width: 900px) {
+    .analysis-container {
+        padding: 0 20px;
+
+        .search-bar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            form {
+                width: 100%;
+                display: flex;
+            }
+        }
+
+        .upload-container {
+            width: 100%;
+            flex-direction: column;
+
+            .left {
+                width: 100%;
+                margin-bottom: 20px;
+
+                form {
+                    .start-analysis-button {
+                        width: 100%;
+
+                    }
+                }
+            }
+
+
+            .right {
+                width: 100%;
+            }
+
+        }
+
+        .analysis-repo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .analysis-repo {
+            width: calc(50% - 20px);
+        }
+    }
+
+    .modal-content {
+        width: 90%;
+        height: 85%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .analysis-container {
+        padding: 0 20px;
+
+        .search-bar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            form {
+                width: 100%;
+                display: flex;
+            }
+        }
+
+        .upload-container {
+            width: 100%;
+            flex-direction: column;
+
+            .left {
+                width: 100%;
+                margin-bottom: 20px;
+
+                form {
+                    .start-analysis-button {
+                        width: 100%;
+
+                    }
+                }
+            }
+
+
+            .right {
+                width: 100%;
+            }
+
+        }
+
+        .analysis-repo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .analysis-repo {
+            width: calc(100%);
+        }
+    }
+
+    .modal-content {
+        width: 90%;
+        height: 85%;
+    }
+}

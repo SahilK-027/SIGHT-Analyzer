@@ -1,0 +1,55 @@
+.notfound-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .f404 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .four {
+        font-size: 150px;
+    }
+
+    .home-btn {
+        padding: 15px 20px;
+        cursor: pointer;
+        margin-top: 35px;
+        margin-bottom: 20px;
+        width: 200px;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        padding: 10px;
+        width: 50%;
+        color: var(--grey);
+    }
+
+    .home-btn:hover {
+        background-color: var(--hover-color);
+    }
+}
+
+@media (max-width: 500px) {
+    .notfound-page {
+    
+        .four {
+            font-size: 100px;
+        }
+    
+        p {
+            width: 90%;
+        }
+    
+        .home-btn:hover {
+            background-color: var(--hover-color);
+        }
+    }
+}

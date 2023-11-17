@@ -1,0 +1,196 @@
+.login-signup-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+
+    .login-section,
+    .register-section {
+        border-radius: 5px;
+        padding: 20px 20px;
+        margin: 0px;
+        width: 380px;
+        display: inline-block;
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding: 0 0 30px 0;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        text-align: left;
+        font-size: 0.875rem;
+        font-weight: 700;
+        padding: 5px 0;
+    }
+
+    input {
+        width: 100%;
+        padding: 14px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid var(--grey);
+        border-radius: 5px;
+        background: transparent;
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--white);
+    }
+
+    .sign-in-button,
+    .register-in-button {
+        padding: 15px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: var(--hover-color);
+    }
+
+    p {
+        margin-top: 10px;
+
+        span {
+            color: var(--blue);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        span:hover {
+            color: var(--hover-color);
+
+        }
+
+        font-size: 15px;
+    }
+
+    .check-box {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .check-box-label {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .policy {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 95vh;
+        background: #00000094;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .policy-content {
+        width: 40%;
+        height: 85%;
+        background-color: var(--card-color);
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+        text-align: left;
+        padding: 30px;
+        padding-top: 0;
+        color: #ffffffbd;
+
+        h4 {
+            color: var(--blue);
+            align-self: center;
+        }
+
+        .wrapper {
+            color: white;
+            font-size: 22px;
+            margin-right: 5px;
+        }
+
+        @-webkit-keyframes rainbow {
+            0% {
+                background-position: 0% 82%
+            }
+
+            50% {
+                background-position: 100% 19%
+            }
+
+            100% {
+                background-position: 0% 82%
+            }
+        }
+
+        @-moz-keyframes rainbow {
+            0% {
+                background-position: 0% 82%
+            }
+
+            50% {
+                background-position: 100% 19%
+            }
+
+            100% {
+                background-position: 0% 82%
+            }
+        }
+
+        @-o-keyframes rainbow {
+            0% {
+                background-position: 0% 82%
+            }
+
+            50% {
+                background-position: 100% 19%
+            }
+
+            100% {
+                background-position: 0% 82%
+            }
+        }
+
+        @keyframes rainbow {
+            0% {
+                background-position: 0% 82%
+            }
+
+            50% {
+                background-position: 100% 19%
+            }
+
+            100% {
+                background-position: 0% 82%
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .login-signup-body {
+        h2 {
+            text-align: left;
+            font-size: 2rem;
+            padding: 30px 0 30px 0;
+            margin-top: 30px;
+        }
+
+        .policy-content {
+            width: 90%;
+        }
+    }
+}

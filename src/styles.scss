@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #02040a;
+    --card-color: #0d1116;
+    --white: #fff;
+    --light-white: #fdfdfd;
+    --black: #000;
+    --grey: #888;
+    --blue: #1f6feb;
+    --green: #00C852;
+    --red: #FF5045;
+    --orange: #FFB545;
+    --hover-color: #175abf;
+    --border-color: #30363d;
+}
+
+::selection {
+    color: var(--white);
+    background: var(--blue);
+}
+
+#root,
+root,
+html,
+body {
+    background: var(--bg-color);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+button,
+a,
+span,
+p {
+    transition: all 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    pointer-events: none;
+}
+
+.primary-button {
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 8px 20px;
+}
+
+.border-button {
+    background-color: var(--bg-color);
+    color: var(--white);
+    border: 1px solid var(--blue);
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 8px 20px;
+}
+
+.card {
+    background: var(--card-color);
+    color: var(--white);
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 1);
+}
+
+.pagination-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.pagination-btns button {
+    background-color: #21262d;
+    /* Change this to your desired background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border: 1px solid var(--border-color);
+
+    /* Disable button styles */
+    &:disabled {
+        background-color: #21262d;
+        cursor: not-allowed;
+        color: var(--grey);
+    }
+
+    /* Icon styles */
+    i {
+        font-size: 20px;
+        vertical-align: middle;
+    }
+}
+
+.pagination-btns>.page-number-btn {
+    background: transparent;
+    color: var(--white);
+}
+
+/* Hover effect for enabled buttons */
+.pagination-btns button:not(:disabled):hover {
+    transition: all 0.2s ease;
+    color: var(--blue);
+}
+
+@media (max-width: 500px) {
+    .pagination-btns {
+        gap: 5px;
+        padding: 10px 0;
+        font-size: 12px;
+    }
+}
+
+.sub-title {
+    font-size: 24ps;
+    padding-bottom: 20px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.settings-h3 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.settings-para {
+    font-size: 13px;
+    color: var(--grey);
+}

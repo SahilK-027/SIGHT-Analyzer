@@ -1,0 +1,44 @@
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+    .login-signup-footer {
+        border-top: 1px solid var(--border-color);
+        color: var(--grey);
+        text-align: center;
+        padding: 4px 0px;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 0.75rem;
+        background-color: var(--bg-color);
+
+        p{
+            margin: 0;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-container {
+        .login-signup-footer {
+            width: 100%;
+            padding: 10px;
+            img {
+                width: 30px;
+                height: 30px;
+                margin: 5px;
+            }
+        }
+    }
+}
