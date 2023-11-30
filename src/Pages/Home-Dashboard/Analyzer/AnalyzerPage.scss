@@ -10,6 +10,7 @@
 
         form {
             width: 100%;
+            color: white;
 
             input {
                 width: 90%;
@@ -17,7 +18,7 @@
                 padding: 9px 12px;
                 font-size: 15px;
                 line-height: 20px;
-                color: var(--grey);
+                color: var(--white);
                 background-color: var(--card-color);
                 border: 1px solid var(--border-color);
                 border-radius: 6px;
@@ -97,7 +98,6 @@
     .analysis-repo-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
         margin-top: 20px;
     }
 
@@ -164,19 +164,20 @@
     }
 }
 
-.modal {
+.analysis-report {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: #e3e3e33e;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.776);
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 }
 
-.modal-content {
+.analysis-content {
     width: 40%;
     height: 85%;
     background-color: var(--card-color);
@@ -188,17 +189,32 @@
     overflow-y: scroll;
 }
 
-.close-modal-button {
+.close-analysis-content-button {
     background: var(--red);
     color: white;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    align-self: center;
 }
+
+.report {
+    height: 73%;
+    width: 100%;
+    overflow-y: scroll;
+
+    .detection-res-div {
+        background-color: #000;
+        border: 1px solid var(--grey);
+        padding: 10px;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
 
 @media (max-width: 900px) {
     .analysis-container {
@@ -250,12 +266,64 @@
         }
     }
 
-    .modal-content {
+    .analysis-content {
         width: 90%;
         height: 85%;
     }
 }
 
+
+
+.progress-container {
+    width: 100%;
+    border-radius: 4px;
+    padding: 2px;
+    margin-top: 20px;
+    flex-direction: column;
+    transition: all 0.3s ease;
+
+    p {
+        margin: 0;
+    }
+}
+
+.progress-out {
+    width: 80%;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.progress-bar {
+    height: 5px;
+    background: #fff;
+    border-radius: 4px;
+    text-align: center;
+    color: #000;
+    transition: width 0.3s ease-in-out;
+}
+
+.estimated-time {
+    margin-top: 6px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.stop {
+    color: #fff;
+    background: #ff2b1c;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.stop:hover {
+    background: #e6170a;
+}
 
 @media (max-width: 500px) {
     .analysis-container {

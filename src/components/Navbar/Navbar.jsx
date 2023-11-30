@@ -49,7 +49,6 @@ const Navbar = ({ user }) => {
     const location = useLocation();
 
     const handleLogout = () => {
-        console.log('hi')
         // Remove the JWT token cookie
         cookies.remove('access_token', { path: '/' });
 
