@@ -1,20 +1,35 @@
-# Video Analysis Application for Car Accident Timestamps
+# Frontend
 
-> __Warning__
-> This project is under development
+## Setup
+Download [Node.js](https://nodejs.org/en/download/).
 
-## Live
+Run this followed commands:
 
-Visit sight application here and start using to save your video analysis time
-[live](https://sightanalyzer.vercel.app)
+``` bash
+# Install dependencies (only the first time)
+npm install
 
-## Overview
+# Run the local server
+npm run dev
 
-This project is a video analysis application designed to leverage OpenCV and machine learning to provide timestamps for car accidents in recorded video footage. The application aims to enhance the process of analyzing traffic incidents by automatically detecting and timestamping car accidents.
+# Run the local server host
+npm run host
 
-## Features
+# Build for production in the dist/ directory
+npm run build
+```
 
-- **OpenCV Integration:** Utilizes OpenCV for video processing and analysis.
-- **Machine Learning:** Implements machine learning algorithms for car accident detection.
-- **Timestamp Generation:** Automatically generates timestamps for identified car accidents.
-- **User-Friendly Interface:** Provides an intuitive interface for users to interact with the application./vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Backend
+
+## Setup
+Download [Python](https://www.python.org/downloads/).
+
+Run this followed commands:
+
+``` bash
+# Install dependencies (only the first time)
+pip install
+
+# Run the local server
+python3 api/server.py 
+```
