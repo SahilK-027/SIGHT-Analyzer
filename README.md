@@ -1,6 +1,5 @@
-# Frontend
+# Frontend Setup
 
-## Setup
 Download [Node.js](https://nodejs.org/en/download/).
 
 Run this followed commands:
@@ -19,9 +18,8 @@ npm run host
 npm run build
 ```
 
-# Backend
+# Backend Setup
 
-## Setup
 Download [Python](https://www.python.org/downloads/).
 
 Run this followed commands:
