@@ -4,6 +4,8 @@ Flask-CORS
 python-dotenv
 Flask-JWT-Extended
 pymongo
+python-socketio
 flask_socketio
 ultralytics
 pathlib
+opencv-python
