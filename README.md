@@ -16,9 +16,10 @@ Now, calculate the reduction in false alarms percentage:
 
 So, the improvement in precision from 91.3% to 93.8% resulted in approximately a `28.74%` reduction in false alarms.
 
+# Improvements
+<img width="619" alt="Screenshot 2024-03-05 at 4 41 06 PM" src="https://github.com/SahilK-027/SIGHT-Analyzer/assets/104154041/0d5d3dae-ab42-4e08-a906-f1de24df4546">
 
 # Frontend Setup
-
 Download [Node.js](https://nodejs.org/en/download/).
 
 Run this following commands:
@@ -38,7 +39,6 @@ npm run build
 ```
 
 # Backend Setup
-
 Download [Python](https://www.python.org/downloads/).
 
 Run this following commands:
