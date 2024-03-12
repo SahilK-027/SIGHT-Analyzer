@@ -1,7 +1,4 @@
-## Welcome to SIGHT 👀
-## Demo
-https://github.com/SahilK-027/SIGHT-Analyzer/assets/104154041/ec59f05b-188c-4713-84f6-4eb4fb40975c
-
+# Welcome to SIGHT 👀
 ## Overview
 This project is a video analysis application designed to leverage OpenCV and machine learning to provide timestamps for car accidents in recorded video footage. The application aims to enhance the process of analyzing traffic incidents by automatically detecting and timestamping car accidents.
 
@@ -9,7 +6,10 @@ This project is a video analysis application designed to leverage OpenCV and mac
 - **OpenCV Integration:** Uses OpenCV for video processing and analysis.
 - **Machine Learning:** Implements machine learning algorithms for car accident detection.
 - **Timestamp Generation:** Automatically generates timestamps for identified car accidents.
-- **User-Friendly Interface:** Provides an intuitive interface for users to interact with the application./vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User-Friendly Interface:** Provides an intuitive interface for users to interact with the application.
+
+## Demo
+https://github.com/SahilK-027/SIGHT-Analyzer/assets/104154041/ec59f05b-188c-4713-84f6-4eb4fb40975c
 
 ## How do we calculate the reduction in false alarm percentage?
 Given the precision values:
