@@ -1,3 +1,12 @@
+## Overview
+This project is a video analysis application designed to leverage OpenCV and machine learning to provide timestamps for car accidents in recorded video footage. The application aims to enhance the process of analyzing traffic incidents by automatically detecting and timestamping car accidents.
+
+## Features
+- **OpenCV Integration:** Uses OpenCV for video processing and analysis.
+- **Machine Learning:** Implements machine learning algorithms for car accident detection.
+- **Timestamp Generation:** Automatically generates timestamps for identified car accidents.
+- **User-Friendly Interface:** Provides an intuitive interface for users to interact with the application./vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
 # How do we calculate the reduction in false alarms percentage?
 Given the precision values:
 - `Precision_before`: 91.3%
@@ -22,7 +31,7 @@ So, the improvement in precision from 91.3% to 93.8% resulted in approximately a
 # Frontend Setup
 Download [Node.js](https://nodejs.org/en/download/).
 
-Run this following commands:
+Run the following commands:
 
 ``` bash
 # Install dependencies (only the first time)
@@ -41,7 +50,7 @@ npm run build
 # Backend Setup
 Download [Python](https://www.python.org/downloads/).
 
-Run this following commands:
+Run the following commands:
 
 ``` bash
 # Install dependencies (only the first time)
