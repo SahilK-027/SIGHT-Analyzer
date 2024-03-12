@@ -1,8 +1,5 @@
 # Video Analysis Application for Car Accident Timestamps
 
-> __Warning__
-> This project is under development
-
 ## Live
 
 Visit sight application here and start using to save your video analysis time
